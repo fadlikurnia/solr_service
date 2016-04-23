@@ -28,5 +28,5 @@ call("echo "" > /opt/hsolr/logs/solr.log", shell=True)
 call("echo "" > /opt/hsolr/tc/logs/catalina.out", shell=True)
 
 # start solr service on port 8983
-call("bash /opt/hsolr/bin/startup.sh -Djetty.port=8983", shell=True)
+call("bash /opt/hsolr/bin/startup.sh -Djetty.port=8983 -Xms4096m -Xmx4096m", shell=True)
 print "FINISHED"

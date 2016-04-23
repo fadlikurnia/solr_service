@@ -20,4 +20,4 @@ echo "" > /opt/hsolr/logs/solr.log
 echo "" > /opt/hsolr/tc/logs/catalina.out
 
 # start solr service on port 8983
-./opt/hsolr/bin/startup.sh -Djetty.port=8983
+./opt/hsolr/bin/startup.sh -Djetty.port=8983 -Xms4096m -Xmx4096m
